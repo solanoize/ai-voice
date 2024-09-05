@@ -52,8 +52,10 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { JumbotronHomeWidget } from "@/components/widgets/jumbotron";
+import { redirect } from "next/navigation";
 
 export default function Home() {
+  redirect("/dashboard");
   return (
     <>
       <MenuHomeWidget />
